@@ -1,8 +1,15 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿@using ImagePost.Data
+@model List<Image>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="row" style="margin-top: 30px;">
+    <div id="images" class="col-md-6 col-md-offset-3">
+        @foreach (Image i in Model)
+        {
+        <div class="well">
+            <a href="/Home/Enlarged?imgId=@i.Id" style="font-size: 30px;">@i.Title</a>
+            <h5>Posted on @i.DatePosted.ToLongDateString() at @i.DatePosted.ToShortTimeString()</h5>
+            <a href="/Home/Enlarged?imgId=@i.Id"><img src="@i.ImageUrl" style="width: 515px;" /></a>
+        </div>
+        }
+    </div>
 </div>

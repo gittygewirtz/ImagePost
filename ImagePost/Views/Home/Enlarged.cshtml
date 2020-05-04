@@ -1,0 +1,26 @@
+﻿@using ImagePost.Data
+@model ImagePost.Models.EnlargedViewModel
+
+<div class="row" style="margin-top: 30px; margin-bottom: 30px;">
+    <div id="images" class="col-md-6 col-md-offset-1">
+        <input id="imgId" type="hidden" value="@Model.Image.Id" />
+        <h3>@Model.Image.Title</h3>
+        <h5>Posted on @Model.Image.DatePosted.ToLongDateString() at @Model.Image.DatePosted.ToShortTimeString()</h5>
+        <img src="@Model.Image.ImageUrl" style="width: 800px;" />
+        <br />
+        @if (Model.CanLike)
+        {
+            <button id="like-btn" data-id="@Model.Image.Id" class="glyphicon glyphicon-thumbs-up" style="font-size: 30px;"></button>
+        }
+        else
+        {
+            <button disabled class="glyphicon glyphicon-thumbs-up" style="font-size: 30px;"></button>
+        }
+        <span id="like-span" style="font-size: 30px;">@Model.Image.Likes</span>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/Enlarged.js"></script>
+}
+
