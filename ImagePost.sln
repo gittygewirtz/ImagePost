@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagePost", "ImagePost\ImagePost.csproj", "{A95BADFC-8346-42F7-8175-2B6F9B83A1B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImagePost.Data", "ImagePost.Data\ImagePost.Data.csproj", "{C132C6E9-F089-4356-8AFB-083FD2FAD763}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A95BADFC-8346-42F7-8175-2B6F9B83A1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A95BADFC-8346-42F7-8175-2B6F9B83A1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A95BADFC-8346-42F7-8175-2B6F9B83A1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A95BADFC-8346-42F7-8175-2B6F9B83A1B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C132C6E9-F089-4356-8AFB-083FD2FAD763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C132C6E9-F089-4356-8AFB-083FD2FAD763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C132C6E9-F089-4356-8AFB-083FD2FAD763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C132C6E9-F089-4356-8AFB-083FD2FAD763}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1D3D20B1-60AF-4396-8545-F48EE6685214}
+	EndGlobalSection
+EndGlobal
